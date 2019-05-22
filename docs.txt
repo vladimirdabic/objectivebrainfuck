@@ -1,0 +1,35 @@
+
+   ^[optional] - Store string from the brackets into the string tape,
+                 if there's no string then get input and store it in the string tape
+
+   ~> - move string pointer right
+   ~< - move string pointer left
+
+   * - print out the current string tape cell
+   % - push current memory cell onto stack
+   ~% - push current string cell onto stack
+   ~# clear stack
+   @ - clear current cell
+   ~@ - clear current string cell
+   # - if stack[1] operator stack[2]
+
+   ! - Opens a file for reading (file path: current string tape cell)
+       second call closes the file.
+   $ - Write ascii char to file (current memory cell)
+   ~$ - Write string to file
+   & - Read char from file into memory tape
+   ~& - Load line from file into string tape
+
+   ; - add memory cell ascii value to string tape value
+   ~; - tranfer string tape character to memory cell
+   ` - reset memory pointer to pos 0
+   ~` - reset strting pointer to 0
+
+   IFs:
+   1 = equals
+   2 = not equals
+   3 = greater
+   4 = lower
+   
+   comparasion_mode,val1,val2
+   if comparasion is true it returns 1 into the memory cell, if not return 0
